@@ -1,0 +1,45 @@
+.catalogue {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(69, 180, 245);
+  color: white;
+}
+
+.catalogue > h1 {
+  font-weight: 800;
+  margin: 50px;
+}
+
+.catalogue-flexbox {
+  display: flex;
+}
+
+.catalogue-categories {
+  flex: 40%;
+  margin: 10px 60px;
+}
+
+.catalogue-categories a {
+  text-decoration: none;
+}
+
+.catalogue-categories h1 {
+  color: white;
+  font-weight: 600;
+  margin: 25px 0;
+  width: 400px;
+  padding: 20px;
+}
+
+.catalogue-categories h1:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.catalogue-image {
+  flex: 60%;
+}
+
+.catalogue-image img {
+  width: 700px;
+  position: relative;
+  transform: translate(5%, -20%);
+}

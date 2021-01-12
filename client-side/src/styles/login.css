@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  width: 100%;
+  min-height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/library.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  color: white;
+}
+
+.login-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 450px;
+  background-color: rgb(24, 149, 233);
+  color: black;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.login-user h3 {
+  color: white;
+  font-weight: 800;
+}
+
+.login-user input {
+  display: flex;
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 25px;
+  outline: none;
+  border: none;
+}
+
+.login-user button {
+  outline: none;
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  width: 400px;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.login-user h6 {
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+}
+
+.login-user h6:active {
+  text-decoration: underline;
+}
+
+.register-user h3 {
+  color: black;
+  font-weight: 800;
+}
+
+.register-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 450px;
+  background-color: yellow;
+  color: black;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.register-user input {
+  display: flex;
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 25px;
+  outline: none;
+  border: none;
+}
+
+.register-user button {
+  outline: none;
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  width: 400px;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.register-user h6 {
+  cursor: pointer;
+  color: black;
+  margin-top: 20px;
+}
+
+.register-user h6:active {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.social-media .circle {
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.social-media .circle:hover {
+  background-color: white;
+  color: rgb(24, 149, 233);
+}
+
+.circle-register .circle {
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.circle-register .circle:hover {
+  background-color: black;
+  color: rgb(24, 149, 233);
+}

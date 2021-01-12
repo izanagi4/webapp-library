@@ -1,0 +1,49 @@
+.riset {
+  background-image: url("../images/riset-image.jpg");
+  background-position: 18rem 2.5rem;
+  background-repeat: no-repeat;
+  background-size: 1200px;
+}
+
+.riset-container {
+  display: block;
+  margin: 30px;
+  margin-top: 120px;
+  width: 30rem;
+  height: 25rem;
+  font-size: 20px;
+  color: black;
+}
+
+.riset-container h1 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.riset-container p {
+  font-size: 13;
+}
+
+.riset-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 35px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 11px 7px 10px -5px rgba(0, 0, 0, 0.55);
+  font-weight: bold;
+  transition: all 200ms ease-in-out;
+}
+
+.riset-container button a {
+  text-decoration: none;
+  color: white;
+}
+
+.riset-container button:hover {
+  color: black;
+}

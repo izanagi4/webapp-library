@@ -1,0 +1,12 @@
+.coming-soon {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.coming-soon h1 {
+  font-weight: 800;
+  font-style: italic;
+}

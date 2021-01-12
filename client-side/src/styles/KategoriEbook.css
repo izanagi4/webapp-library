@@ -1,0 +1,46 @@
+.kategori-ebook-flexbox {
+  margin: 30px 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.kategori-ebook h1 {
+  font-weight: 800;
+}
+
+.kategori-ebook-column {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.kategori-ebook-card {
+  margin: 20px 0px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.kategori-ebook-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.kategori-ebook-card img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.kategori-ebook-card h4 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.kategori-ebook-card h6 {
+  margin-left: 10px;
+  font-size: 15px;
+}

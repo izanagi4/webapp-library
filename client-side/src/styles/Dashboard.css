@@ -1,0 +1,137 @@
+.dashboard-page {
+  width: 100%;
+}
+
+.dashboard-flexbox {
+  display: flex;
+  flex: 2;
+  overflow: auto;
+}
+
+.most-accessed-box {
+  display: flex;
+  height: 100%;
+  max-height: 100%;
+  flex: 70%;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  padding: 50px;
+  color: white;
+  background-color: orange;
+}
+
+.most-accessed-box h1 {
+  font-weight: 800;
+  padding: 5px;
+  text-align: center;
+}
+
+.most-accessed-book {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  margin: 10px;
+  padding: 20px;
+}
+
+.most-accessed-book h2 {
+  font-weight: 700;
+}
+
+.ebook-list {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ebook-list h6 {
+  margin-right: 50px;
+}
+
+.ebook-list-box {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: orange;
+}
+
+.ebook-list-box h1 {
+  font-weight: 800;
+}
+
+.ebook-list-box table {
+  color: white;
+  text-align: center;
+  border: 2px solid white;
+  overflow: auto;
+}
+
+.ebook-list-header-row {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ebook-list-header-row h6 {
+  margin-right: 50px;
+}
+/*Table Style*/
+.tg {
+  border-collapse: collapse;
+  border-color: #9abad9;
+  border-spacing: 0;
+}
+.tg td {
+  background-color: #ebf5ff;
+  border-bottom-width: 1px;
+  border-color: #9abad9;
+  border-style: solid;
+  border-top-width: 1px;
+  border-width: 0px;
+  color: #444;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  background-color: #409cff;
+  border-bottom-width: 1px;
+  border-color: #9abad9;
+  border-style: solid;
+  border-top-width: 1px;
+  border-width: 0px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-0e8q {
+  border-color: #343434;
+  font-size: 100%;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-wt6t {
+  background-color: #d2e4fc;
+  border-color: inherit;
+  font-size: 100%;
+  text-align: center;
+  vertical-align: top;
+}

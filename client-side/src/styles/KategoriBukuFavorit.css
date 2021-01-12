@@ -1,0 +1,35 @@
+.kategori-buku-favorit {
+  margin: 20px;
+  max-width: 100%;
+}
+
+.kategori-buku-favorit h1 {
+  font-weight: 800;
+  text-align: center;
+}
+
+.kategori-buku-favorit h3 {
+  font-weight: 800;
+}
+
+.kategori-buku-favorit-flexbox {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.kategori-buku-favorit-card {
+  text-align: left;
+  margin: 15px;
+}
+
+.kategori-buku-favorit-card img {
+  width: 350px;
+}
+
+.kategori-buku-favorit-card a {
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,228 @@
+* {
+  scroll-behavior: smooth;
+}
+
+video {
+  margin-top: 50px;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 60%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.about-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  max-width: 100%;
+  height: 110vh;
+  display: flex;
+}
+
+.about-container h1 {
+  width: 100%;
+  height: 100%;
+  font-size: 60px;
+  margin: 10px;
+  text-align: center;
+  font-weight: 800;
+  position: relative;
+  top: 29%;
+}
+
+.about-container p {
+  display: block;
+  font-size: 20px;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  top: 29%;
+}
+
+.facility-container {
+  display: flex;
+  max-width: 100%;
+  height: 45rem;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-image: url("../images/facility-image.png");
+  background-position: 2rem 3rem;
+  background-size: 45rem;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: rgb(24, 149, 233);
+}
+
+.description-facility {
+  font-size: 20px;
+  position: relative;
+  width: 430px;
+  height: 380px;
+  padding: 15px 30px;
+  border-radius: 10px 0 0 10px;
+  transition: all 300ms ease-in;
+  overflow: hidden;
+  margin-top: 180px;
+}
+
+.description-facility ul {
+  margin-top: 20px;
+}
+
+.description-facility > h1 {
+  font-weight: 700;
+  font-size: 3.75em;
+}
+
+/*.description-facility:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 415px;
+}*/
+
+.traits small {
+  position: relative;
+  left: 30px;
+}
+
+.traits li {
+  display: flex;
+  align-items: center;
+}
+
+.traits ul {
+  padding: 0;
+}
+
+.traits .circle {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgb(24, 149, 233);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(24, 149, 233);
+  margin: 10px;
+  text-decoration: none;
+}
+
+.traits .circle:hover {
+  color: white;
+  background-color: rgb(24, 149, 233);
+}
+
+.services-container {
+  display: flex;
+  max-width: 100%;
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-size: 45rem;
+  background-color: rgb(24, 149, 233);
+  background-position: 35rem 4rem;
+  background-image: url("../images/services-image.svg");
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: white;
+}
+
+.description-services {
+  color: white;
+  font-size: 20px;
+  width: 430px;
+  font-size: 20px;
+  position: relative;
+  height: 250px;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 0 10px 10px 0;
+  margin: 100px auto 50px 10px;
+}
+
+.description-services > p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.description-services > h1 {
+  font-weight: 700;
+  font-size: 3.75em;
+}
+
+.description-services button {
+  border-radius: 50px;
+  margin-top: 20px;
+  width: 170px;
+  height: 60px;
+  background-color: orange;
+  border: none;
+  color: white;
+  outline: none;
+  font-weight: bold;
+  transition: all 300ms ease-in-out;
+}
+
+.description-services button:hover {
+  color: rgb(24, 149, 233);
+  background-color: white;
+  border: 1px solid orange;
+}
+
+.misc-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.description-misc {
+  font-size: 50px;
+  width: 900px;
+  margin: 150px 0px 20px 0px;
+}
+
+.misc-container p {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.misc-container > .description {
+  max-width: 100%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+}
+
+.card-about {
+  padding: 50px;
+  margin: 30px 30px;
+  background-color: orange;
+  color: white;
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.21);
+}
+
+.card-about img {
+  width: 200px;
+}
+
+.card-about h1 {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.card-about:hover {
+  opacity: 0.8;
+  transition: all 500ms ease;
+}

@@ -1,0 +1,48 @@
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information input {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.information button {
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+}
+
+.information button:hover {
+    cursor: pointer;
+}
+
+.employees {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.employee {
+    overflow: auto;
+    width: 450px;
+    height: 240px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.employee h3 {
+    margin-top: 5px;
+}
