@@ -18,15 +18,55 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["https://e-library-bcv.netlify.app"],
+    origin: [
+      "https://e-library-bcv.netlify.app",
+      "https://bcv-e-library.herokuapp.com",
+      "http://localhost:3000",
+    ],
     methods: ["GET", "POST"],
     credentials: true,
   })
 );
-
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.set("trust proxy", 1); // trust first proxy
 
+/*const RedisStore = connectRedis(session);
+
+// 1 configure our redis
+const redisClient = redis.createClient({
+  port: 6379,
+  host: "localhost",
+});
+
+// 2. configure session middleware
+app.use(
+  session({
+    store: new RedisStore({ client: redisClient }),
+    secret: "mySecret",
+    saveUninitialized: false,
+    resave: false,
+    cookie: {
+      secure: false, // if true: only transmit cookie over https
+      maxAge: 1000 * 60 * 30, // session max age in milliseconds
+    },
+  })
+);*/
+
+app.use(
+  session({
+    key: "userId",
+    secret: "keyboard cat",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      secure: true,
+      maxAge: 14 * 24 * 60 * 60 * 1000,
+      sameSite: "none",
+    },
+  })
+);
+/*
 app.use(
   session({
     key: "userId",
@@ -34,21 +74,27 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      expires: 60 * 60 * 24,
+      secure: false,
+      maxAge: 1000 * 60 * 60 * 48,
+      sameSite: "none",
     },
   })
-);
+);*/
 
-var storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "../server-side/upload");
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + "-" + file.originalname);
-  },
-});
-
-var upload = multer({ storage: storage }).single("file");
+/*app.use(
+  session({
+    name: "userId",
+    secret: "1234567890QWERTY",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: false,
+      secure: true,
+      maxAge: 14 * 24 * 60 * 60 * 1000, //14 days,
+      
+    },
+  })
+);*/
 
 const db = mysql.createConnection({
   host: "us-cdbr-east-02.cleardb.com",
@@ -102,8 +148,8 @@ app.post("/login", (req, res) => {
         bcrypt.compare(password, result[0].password, (error, response) => {
           if (response) {
             req.session.user = result;
-            console.log(req.session.user);
             res.send(result);
+            console.log(req.session.user);
           } else {
             res.send({ message: "Wrong username or password" });
           }
@@ -117,7 +163,7 @@ app.post("/login", (req, res) => {
 
 app.get("/logout", (req, res) => {
   if (req.session.user) {
-    res.clearCookie("userID");
+    res.clearCookie("userId");
     res.send({ loggedIn: false });
   }
 });

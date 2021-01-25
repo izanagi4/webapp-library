@@ -114,6 +114,13 @@ app.post("/login", (req, res) => {
   );
 });
 
+app.get("/logout", (req, res) => {
+  if (req.session.user) {
+    res.clearCookie("userId");
+    res.send({ loggedIn: false });
+  }
+});
+
 app.post("/upload", (req, res) => {
   const namaLengkap = req.body.namaLengkap;
   const univ = req.body.univ;

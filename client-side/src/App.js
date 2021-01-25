@@ -25,6 +25,7 @@ import Chat from "./pages/Chat";
 import Message from "./pages/Message";
 import Setting from "./pages/Setting";
 import AddBook from "./pages/AddBook";
+import Logout from "./Logout";
 import comingsoon from "./ComingSoon";
 import "./App.css";
 import "./App.js";
@@ -34,6 +35,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
+        <Route exact path="/logout" component={Logout} />
         <Route exact path="/addbook" component={AddBook} />
         <Route exact path="/setting" component={Setting} />
         <Route exact path="/message" component={Message} />

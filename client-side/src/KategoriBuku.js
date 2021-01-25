@@ -33,6 +33,7 @@ function KategoriBuku() {
         </div>
         <div className="kategori-buku-rightside">
           {kategoriList
+            // eslint-disable-next-line array-callback-return
             .filter((val) => {
               if (searchTerm === "") {
                 return val;
@@ -46,7 +47,7 @@ function KategoriBuku() {
               return (
                 <div className="kategori-buku-card" key={val.id}>
                   <a href={`/books/${val.link}`}>
-                    <img src={img} alt="booked" />
+                    <img src={val.image} alt="booked" />
                     <h4>{val.judul_buku}</h4>
                     <h5>
                       {val.tahun_buku} <br /> {val.penulis}

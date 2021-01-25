@@ -166,6 +166,6 @@
 }
 
 .circle-register .circle:hover {
-  background-color: black;
+  background-color: yellow;
   color: rgb(24, 149, 233);
 }
